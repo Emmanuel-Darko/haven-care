@@ -75,385 +75,385 @@ body, html {
 </style>
 <body>
 
-<!-- Navbar (sit on top) --> 
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <!-- For large and medium screens -->
-    <a href="#home" class="w3-hide-small">
-      <img src="images/Picture1.png" alt="Logo" style="width:160px;height:auto;margin-left:5px;margin-bottom:1px;">
-    </a>
-    <!-- For small screens -->
-    <a href="#home" class="w3-hide-medium w3-hide-large">
-      <img src="images/Picture1.png" alt="Logo" style="width:130px;height:auto;margin-left:0px;margin-bottom:0.5px">
-    </a>
+  <!-- Navbar (sit on top) --> 
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <!-- For large and medium screens -->
+      <a href="#home" class="w3-hide-small">
+        <img src="images/Picture1.png" alt="Logo" style="width:160px;height:auto;margin-left:5px;margin-bottom:1px;">
+      </a>
+      <!-- For small screens -->
+      <a href="#home" class="w3-hide-medium w3-hide-large">
+        <img src="images/Picture1.png" alt="Logo" style="width:130px;height:auto;margin-left:0px;margin-bottom:0.5px">
+      </a>
 
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small navtop">
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info"></i> ABOUT</a>
-      <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-users"></i> SERVICES</a>
-      <a href="#gallery" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small navtop">
+        <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info"></i> ABOUT</a>
+        <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-users"></i> SERVICES</a>
+        <a href="#gallery" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" style="cursor:pointer;color:rgb(22, 190, 246);margin-top:auto;" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" style="cursor:pointer;color:rgb(22, 190, 246);margin-top:auto;" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
   </div>
-</div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-text-white w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none;background-color: rgba(0, 0, 0,0.8)" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-text-red w3-border-bottom"> <i class="fa fa-times w3-right"></i></a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom">ABOUT <i class="fa fa-info w3-right"></i></a>
-  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom">SERVICES <i class="fa fa-users w3-right"></i></a>
-  <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom">GALLERY <i class="fa fa-th w3-right"></i></a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom">CONTACT <i class="fa fa-envelope w3-right"></i></a>
-</nav>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-text-white w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none;background-color: rgba(0, 0, 0,0.8)" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-text-red w3-border-bottom"> <i class="fa fa-times w3-right"></i></a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom">ABOUT <i class="fa fa-info w3-right"></i></a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom">SERVICES <i class="fa fa-users w3-right"></i></a>
+    <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom">GALLERY <i class="fa fa-th w3-right"></i></a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom">CONTACT <i class="fa fa-envelope w3-right"></i></a>
+  </nav>
 
-<!-- Header with full-height image -->
-<!-- Large screens -->
-<header class="bgimg-1a w3-display-container w3-hide-medium w3-hide-small" id="home">
-  <div class="float-note-a">
-    <span style="font-size:40px;font-family: monospace"> Professional </span>
-    <span class="txt-type" data-wait="3000" data-words='["FamilyCare...","HealthCare...","HomeCare...","Aged Guide..."]'
-      style="font-size:40px;font-family: monospace">
-    </span><br>
-    <span style="font-size:37px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><i class="fa fa-hospital-symbol"></i><i class="fa fa-truck"></i></span>
-  </div>
-  <div class="w3-display-right w3-text-grey w3-large" style="padding:24px 48px; margin-top:-25px">
-      <i class="fab fa-facebook w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-      <i class="fab fa-instagram w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-      <i class="fab fa-twitter w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-      <i class="fab fa-linkedin w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-  </div>
-  <!-- Curvy background -->
-  <svg id="curve-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
-    <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
-  </svg>
-  <!-- <svg id="curve-1"  viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
-    <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:red;"></path>
-  </svg> -->
-</header>
-
-<!-- Medium screens -->
-<header class="bgimg-1b w3-display-container w3-hide-large w3-hide-small" id="home">
-  <div class="float-note-a">
-      <span style="font-size:40px;font-family: monospace"> Professional </span><br/>
-      <span class="txt-type-2" data-wait="3000" data-words='["FamilyCare","HealthCare","HomeCare","Aged Guide"]'
+  <!-- Header with full-height image -->
+  <!-- Large screens -->
+  <header class="bgimg-1a w3-display-container w3-hide-medium w3-hide-small" id="home">
+    <div class="float-note-a">
+      <span style="font-size:40px;font-family: monospace"> Professional </span>
+      <span class="txt-type" data-wait="3000" data-words='["FamilyCare...","HealthCare...","HomeCare...","Aged Guide..."]'
         style="font-size:40px;font-family: monospace">
       </span><br>
       <span style="font-size:37px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><i class="fa fa-hospital-symbol"></i><i class="fa fa-truck"></i></span>
-  </div>
-  <div class="w3-display-right w3-text-grey w3-large" style="padding:24px 48px">
+    </div>
+    <div class="w3-display-right w3-text-grey w3-large" style="padding:24px 48px; margin-top:-25px">
+        <i class="fab fa-facebook w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
+        <i class="fab fa-instagram w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
+        <i class="fab fa-twitter w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
+        <i class="fab fa-linkedin w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
+    </div>
+    <!-- Curvy background -->
+    <svg id="curve-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+      <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
+    </svg>
+    <!-- <svg id="curve-1"  viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+      <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:red;"></path>
+    </svg> -->
+  </header>
+
+  <!-- Medium screens -->
+  <header class="bgimg-1b w3-display-container w3-hide-large w3-hide-small" id="home">
+    <div class="float-note-a">
+        <span style="font-size:40px;font-family: monospace"> Professional </span><br/>
+        <span class="txt-type-2" data-wait="3000" data-words='["FamilyCare","HealthCare","HomeCare","Aged Guide"]'
+          style="font-size:40px;font-family: monospace">
+        </span><br>
+        <span style="font-size:37px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><i class="fa fa-hospital-symbol"></i><i class="fa fa-truck"></i></span>
+    </div>
+    <div class="w3-display-right w3-text-grey w3-large" style="padding:24px 48px">
+        <i class="fab fa-facebook w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
+        <i class="fab fa-instagram w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
+        <i class="fab fa-twitter w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
+        <i class="fab fa-linkedin w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
+    </div>
+    <!-- Curvy background -->
+    <svg id="curve-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+      <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
+    </svg>
+  </header>
+
+  <!-- Small screen -->
+  <header class="bgimg-1c w3-display-container w3-hide-large w3-hide-medium" id="home">
+    <span class="float-note-b"><b> Professional</b></span>
+    <br><br>
+    <span class="float-note-b">
+      <b class="txt-type-3" data-wait="3000" data-words='["FamilyCare...","HealthCare...","HomeCare...","Aged Guide..."]'></b>
+    </span>
+    <div class="w3-display-bottomright w3-large" style="padding:24px 15px;">
       <i class="fab fa-facebook w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
       <i class="fab fa-instagram w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
       <i class="fab fa-twitter w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
       <i class="fab fa-linkedin w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-  </div>
-  <!-- Curvy background -->
-  <svg id="curve-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
-    <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
-  </svg>
-</header>
-
-<!-- Small screen -->
-<header class="bgimg-1c w3-display-container w3-hide-large w3-hide-medium" id="home">
-  <span class="float-note-b"><b> Professional</b></span>
-  <br><br>
-  <span class="float-note-b">
-    <b class="txt-type-3" data-wait="3000" data-words='["FamilyCare...","HealthCare...","HomeCare...","Aged Guide..."]'></b>
-  </span>
-  <div class="w3-display-bottomright w3-large" style="padding:24px 15px;">
-    <i class="fab fa-facebook w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-    <i class="fab fa-instagram w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-    <i class="fab fa-twitter w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-    <i class="fab fa-linkedin w3-hover-opacity" style="color:rgb(22, 190, 246);"></i>
-  </div>
-  <!-- Curvy background -->
-  <svg id="curve-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
-    <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
-  </svg>
-</header>
-
-
-<!-- About Section -->
-<div class="w3-display-container" style="padding:50px 0px 70px 0px;background-color:rgba(173, 216, 230,0.2);background-color:lightblue;" id="about">
-<div style="padding: 0 10px">
-  <h3 class="w3-center w3-opacity" style="color:rgb(22, 190, 246);">About <b>HAVEN</b></h3>
-  <p class="w3-center w3-large" style="text-align: right">
-    <span style="font-size:30px;font-weight:bold;color:red;">H</span><b>aven home care health services</b> is committed to meeting the needs of patients and clients <br>
-    in providing comprehensive home health care by highly trained and qualified caregivers <br>
-    while maintaining the hihgest standard of care, integrity and dignity.
-  </p>
-  <br>
-  <h4 class="w3-center w3-margin-top w3-opacity" style="color:rgb(22, 190, 246);"><b> Staffing </b></h4>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    
-    <div class="w3-third slideanim w3-margin-bottom">
-      <i class="fa fa-user-md w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large"><b> Registered Nurses </b></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
-    <div class="w3-third slideanim w3-margin-bottom">
-      <i class="fa fa-certificate w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large"><b> Certified Nursing Assistance </b></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-third slideanim w3-margin-bottom">
-      <i class="fa fa-id-badge w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large"><b> Licensed Practical Nurses </b></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-third slideanim w3-margin-bottom">
-      <i class="fa fa-pills w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large"><b> Certified Medication Technician </b></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-third slideanim-right w3-margin-bottom">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large"><b> Companions </b></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-third slideanim-left w3-margin-bottom">
-      <i class="fa fa-wheelchair w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large"><b> Home Health Aide </b></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
-
-  <!-- Curvy background -->
-  <!-- <svg id="curve-2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
-    <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
-  </svg> -->
-</div> 
-</div>
-
-<!-- Services Section -->
-<div class="w3-container" style="padding:70px 0px;background-color:rgba(255, 255, 0, 0.2);" id="services">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3 class="w3-opacity" style="color:rgb(22, 190, 246)">Our SERVICES</h3>
-      <p class="">We offer the following services...</p>
-      <p class="w3-small"> <i>Click to expand...</i> </p>
-
-      <!-- Accordions -->
-      <button onclick="myFunction('Demo1',0)" class="w3-button w3-block w3-left-align marg-b w3-animate-left slideanim-left w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Skilled Nursing <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
-      <div id="Demo1" class="w3-hide w3-animate-zoom">
-        <p class="w3-block w3-left-align w3-padding w3-light-grey">
-          We provide skilled nursing services such as,<i> wound dressings, rehabilitation services, tube feedings, vital signs monitoring and recording, injections(intravenous) etc to enhance and promote rapid changing health status of our clients </i>
-        </p>
-      </div>
-      <button onclick="myFunction('Demo2',1)" class="w3-button w3-block w3-left-align marg-b w3-animate-right slideanim-right w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Home Health Aide <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
-      <div id="Demo2" class="w3-hide w3-animate-zoom">
-        <p class="w3-block w3-left-align w3-padding w3-light-grey">
-          We care for patients with diverse medical conditions in their home's comfort. <br>
-          <b>Includes:</b><i> giving medications, personal hygiene, changing dressing, helping with walking aids, intake and output, housekeeping services for clients. </i> 
-        </p>
-      </div>
-      <button onclick="myFunction('Demo3',2)" class="w3-button w3-block w3-left-align marg-b w3-animate-left slideanim-left w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Physical Therapy <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
-      <div id="Demo3" class="w3-hide w3-animate-zoom">
-        <p class="w3-block w3-left-align w3-padding w3-light-grey">
-          We undertake physio sessions with our clients most especially with physical injuries or illness of to regain range of movement and control pain
-        </p>
-      </div>
-      <button onclick="myFunction('Demo4',3)" class="w3-button w3-block w3-left-align marg-b w3-animate-right slideanim-right w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Occupational Therapy <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
-      <div id="Demo4" class="w3-hide w3-animate-zoom">
-        <p class="w3-block w3-left-align w3-padding w3-light-grey">
-          We help you develop, recover and improve as well  as maintain the skills needed for  their daily living and working activities eg. <br>
-          <b> a.</b> Self care (brushing of teeth,clothe buttoning etc). <br>
-          <b> b.</b> Fine motor skills (controlling a pencil, grasping etc).
-        </p>
-      </div>
-      <button onclick="myFunction('Demo5',4)" class="w3-button w3-block w3-left-align marg-b w3-animate-left slideanim-left w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Medical Social Services <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
-      <div id="Demo5" class="w3-hide w3-animate-zoom">
-        <p class="w3-block w3-left-align w3-padding w3-light-grey">
-          Educational and counseling services, helps client to determine appropriate health care plan to promote health status for themselves and families, 
-          Organize for institutions  Health talks, walks and seminars, health event organizing and promoting, health screenings programs etc. 
-        </p>
-      </div>
-      <button onclick="myFunction('Demo6',5)" class="w3-button w3-block w3-left-align marg-b w3-animate-right slideanim-right w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Speech Therapy <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
-      <div id="Demo6" class="w3-hide w3-animate-zoom">
-        <p class="w3-block w3-left-align w3-padding w3-light-grey">
-          Educational and counseling services, helps client to determine appropriate health care plan to promote health status for themselves and families, 
-          Organize for institutions  Health talks, walks and seminars, health event organizing and promoting, health screenings programs etc. 
-        </p>
-      </div>
-    </div>
-    <br>
-
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large box-shad" src="images/hc-1.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-
-  <!-- Curvy background -->
-  <!-- <svg id="curve-3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
-    <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
-  </svg> -->
-</div>
-
-<!-- Gallery Section -->
-<div class="w3-container" style="padding:100px 0 0px 0;background-color:rgba(172, 172, 172, 0.1)" id="gallery">
-  <h3 class="w3-center w3-opacity" style="color:rgb(22, 190, 246)">Our GALLERY</h3>
-  <p class="w3-center w3-large">These quality of services is assured...</p>
-  <p class="w3-center w3-small"> <i>Click image to enlarge...</i> </p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6 slideanim w3-margin-bottom">
-      <img src="images/hc-7.jpg" class="w3-hover-opacity box-shad w3-round" style="width:100%" onclick="onClick(this)" alt="Client receiving Nurses">
-    </div>
-
-    <div class="w3-col l3 m6 slideanim w3-margin-bottom">
-      <img src="images/hc-8.jpg" class="w3-hover-opacity box-shad w3-round" style="width:100%" onclick="onClick(this)" alt="Nurses educating the family">
-    </div>
-
-    <div class="w3-col l3 m6 slideanim w3-margin-bottom">
-      <img src="images/hc-2.jpg" class="w3-hover-opacity box-shad w3-round" style="width:100%" onclick="onClick(this)" alt="Professional Family Health Care">
-    </div>
-
-    <div class="w3-col l3 m6 slideanim w3-margin-bottom">
-      <img src="images/hc-1.jpg" class="w3-hover-opacity box-shad w3-round" style="width:100%" onclick="onClick(this)" alt="Nurse treating patient">
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
-  </div>
-
-  <br><br>
-  <div class="slideanim w3-center">
-    <a href="gallery.html" class="w3-card-2 w3-button w3-grey w3-center box-shad">
-      <span> View more <i class="fa fa-th"></i> </span>
-    </a>
-  </div>
-
-  <!-- Curvy background -->
-  <svg id="curve-4" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
-    <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
-  </svg>
-</div>
-
-
-<!-- Testimonials Section -->
-<div style="background-color: rgba(172, 172, 172, 0.1)">
-<div class="w3-container" style="padding:30px 0 80px 0;background-color:lightgrey" id="test">
-  <h3 class="w3-center margin-bottom w3-opacity" style="color:rgb(22, 190, 246)">Testimonials</h3><br>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators w3-margin-bottom" style="z-index: unset">
-        <li data-target="#myCarousel" data-slide-to="0" class="active" style="border:1px solid rgb(22, 190, 246);"></li>
-        <li data-target="#myCarousel" data-slide-to="1" style="border:1px solid rgb(22, 190, 246);"></li>
-        <li data-target="#myCarousel" data-slide-to="2" style="border:1px solid rgb(22, 190, 246);"></li>
-        <br>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner box-shad" role="listbox">
-        <div class="item active">
-          <div class="size">
-              <!-- <img src="pics/Pd3.jpg" alt="Fliers" width="400" height="200"> -->
-              <span> Haven is the best home medical care you can <br>
-              get in this country... </span>
-              <br><br>
-              <p><strong>Mrs. Sarah Kudjoe</strong></p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="size">
-              <!-- <img src="pics/Pd3.jpg" alt="Fliers" width="400" height="200"> -->
-              <span> Look no further than Haven to take care <br>
-               of your aged parents... </span>
-              <br><br>
-              <p><strong>Opanin Yaw</strong></p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="size">
-              <!-- <img src="pics/Pd3.jpg" alt="Fliers" width="400" height="200"> -->
-              <span> Young and passionate medical officers who sees<br>
-               to every need of yours... </span>
-              <br><br>
-              <p><strong>Ansah Family</strong></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left fa fa-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right fa fa-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-  </div>
-
-  <!-- Curvy background -->
-  <!-- <svg id="curve-5" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
-    <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
-  </svg> -->
-</div>
-</div>
-
-
-<!-- Contact Section -->
-<div class="w3-container" style="padding:100px 0 0px 0;background-color:rgba(173, 216, 230,0.2)" id="contact">
-  <h3 class="w3-center w3-opacity" style="color:rgb(22, 190, 246)">CONTACT</h3>
-  <p class="w3-center w3-large">Let's get in touch. Book an appointment</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half">
-      <p><i class="fa fa-map-marker fa-fw w3-xlarge"></i> Kokomlemle around ATTC <br> Nearest land mark: Close to Panama Sch. park</p>
-      <p><i class="fa fa-phone fa-fw w3-xlarge"></i> Phone: 0558495162 / 0206636940</p>
-      <p><i class="fa fa-envelope fa-fw w3-xlarge"> </i> Email: havenhchs@gmail.com</p>
-      <br>
-    </div>
-    <div class="w3-half">
-      <form action="mailto:darkoemmanuelofosu@gmail.com" action="POST" target="_top">
-        <p><input class="w3-input" type="text" placeholder="Name" required name="Name" style="border:0.4px solid rgb(22, 190, 246);border-radius:5px"></p>
-        <p><input class="w3-input" type="text" placeholder="Email" required name="Email" style="border:0.4px solid rgb(22, 190, 246);border-radius:5px"></p>
-        <p><input class="w3-input" type="text" placeholder="Subject" required name="Subject" style="border:0.4px solid rgb(22, 190, 246);border-radius:5px"></p>
-        <p><input class="w3-input" type="text" placeholder="Message" required name="Body" style="border:0.4px solid rgb(22, 190, 246);border-radius:5px"></p>
-        <p>
-          <button class="w3-button box-shad" type="submit"  style="border:1px solid rgb(22, 190, 246);border-radius:5px">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-    </div>
-    </div>
-    
     <!-- Curvy background -->
-    <svg id="curve-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+    <svg id="curve-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
       <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
     </svg>
+  </header>
 
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey" style="text-decoration: none;"><i class="fa fa-arrow-up w3-margin-right"></i>Scroll up</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fab fa-facebook w3-hover-opacity"></i>
-    <i class="fab fa-instagram w3-hover-opacity"></i>
-    <i class="fab fa-twitter w3-hover-opacity"></i>
-    <i class="fab fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">&copy; Haven <span id="year"></span> </p>
-    <p class="w3-medium"><i class="fa fa-hospital-symbol"></i> <span class="w3-text-blue">Your health,</span> <span class="w3-text-red">our priority</span></p>
+  <!-- About Section -->
+  <div class="w3-display-container" style="padding:50px 0px 70px 0px;background-color:rgba(173, 216, 230,0.2);background-color:lightblue;" id="about">
+  <div style="padding: 0 10px">
+    <h3 class="w3-center w3-opacity" style="color:rgb(22, 190, 246);">About <b>HAVEN</b></h3>
+    <p class="w3-center w3-large" style="text-align: right">
+      <span style="font-size:30px;font-weight:bold;color:red;">H</span><b>aven home care health services</b> is committed to meeting the needs of patients and clients <br>
+      in providing comprehensive home health care by highly trained and qualified caregivers <br>
+      while maintaining the hihgest standard of care, integrity and dignity.
+    </p>
+    <br>
+    <h4 class="w3-center w3-margin-top w3-opacity" style="color:rgb(22, 190, 246);"><b> Staffing </b></h4>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      
+      <div class="w3-third slideanim w3-margin-bottom">
+        <i class="fa fa-user-md w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large"><b> Registered Nurses </b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-third slideanim w3-margin-bottom">
+        <i class="fa fa-certificate w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large"><b> Certified Nursing Assistance </b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-third slideanim w3-margin-bottom">
+        <i class="fa fa-id-badge w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large"><b> Licensed Practical Nurses </b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-third slideanim w3-margin-bottom">
+        <i class="fa fa-pills w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large"><b> Certified Medication Technician </b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-third slideanim-right w3-margin-bottom">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large"><b> Companions </b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-third slideanim-left w3-margin-bottom">
+        <i class="fa fa-wheelchair w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large"><b> Home Health Aide </b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+    </div>
+
+    <!-- Curvy background -->
+    <!-- <svg id="curve-2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+      <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
+    </svg> -->
+  </div> 
   </div>
-  <p class="w3-small">Powered by <a href="http://candle.paperplane.io"  class="w3-text-blue" title="Kode Company Ltd." target="_blank">Kode</a></p>
-  <script>
-    const date = new Date()
-    document.getElementById('year').innerHTML = date.getFullYear() 
-  </script>
-</footer>
+
+  <!-- Services Section -->
+  <div class="w3-container" style="padding:70px 0px;background-color:rgba(255, 255, 0, 0.2);" id="services">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3 class="w3-opacity" style="color:rgb(22, 190, 246)">Our SERVICES</h3>
+        <p class="">We offer the following services...</p>
+        <p class="w3-small"> <i>Click to expand...</i> </p>
+
+        <!-- Accordions -->
+        <button onclick="myFunction('Demo1',0)" class="w3-button w3-block w3-left-align marg-b w3-animate-left slideanim-left w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Skilled Nursing <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
+        <div id="Demo1" class="w3-hide w3-animate-zoom">
+          <p class="w3-block w3-left-align w3-padding w3-light-grey">
+            We provide skilled nursing services such as,<i> wound dressings, rehabilitation services, tube feedings, vital signs monitoring and recording, injections(intravenous) etc to enhance and promote rapid changing health status of our clients </i>
+          </p>
+        </div>
+        <button onclick="myFunction('Demo2',1)" class="w3-button w3-block w3-left-align marg-b w3-animate-right slideanim-right w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Home Health Aide <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
+        <div id="Demo2" class="w3-hide w3-animate-zoom">
+          <p class="w3-block w3-left-align w3-padding w3-light-grey">
+            We care for patients with diverse medical conditions in their home's comfort. <br>
+            <b>Includes:</b><i> giving medications, personal hygiene, changing dressing, helping with walking aids, intake and output, housekeeping services for clients. </i> 
+          </p>
+        </div>
+        <button onclick="myFunction('Demo3',2)" class="w3-button w3-block w3-left-align marg-b w3-animate-left slideanim-left w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Physical Therapy <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
+        <div id="Demo3" class="w3-hide w3-animate-zoom">
+          <p class="w3-block w3-left-align w3-padding w3-light-grey">
+            We undertake physio sessions with our clients most especially with physical injuries or illness of to regain range of movement and control pain
+          </p>
+        </div>
+        <button onclick="myFunction('Demo4',3)" class="w3-button w3-block w3-left-align marg-b w3-animate-right slideanim-right w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Occupational Therapy <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
+        <div id="Demo4" class="w3-hide w3-animate-zoom">
+          <p class="w3-block w3-left-align w3-padding w3-light-grey">
+            We help you develop, recover and improve as well  as maintain the skills needed for  their daily living and working activities eg. <br>
+            <b> a.</b> Self care (brushing of teeth,clothe buttoning etc). <br>
+            <b> b.</b> Fine motor skills (controlling a pencil, grasping etc).
+          </p>
+        </div>
+        <button onclick="myFunction('Demo5',4)" class="w3-button w3-block w3-left-align marg-b w3-animate-left slideanim-left w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Medical Social Services <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
+        <div id="Demo5" class="w3-hide w3-animate-zoom">
+          <p class="w3-block w3-left-align w3-padding w3-light-grey">
+            Educational and counseling services, helps client to determine appropriate health care plan to promote health status for themselves and families, 
+            Organize for institutions  Health talks, walks and seminars, health event organizing and promoting, health screenings programs etc. 
+          </p>
+        </div>
+        <button onclick="myFunction('Demo6',5)" class="w3-button w3-block w3-left-align marg-b w3-animate-right slideanim-right w3-round-large box-shad" style="background-color:rgb(22, 190, 246)">Speech Therapy <i class="fa fa-plus acc w3-small" style="color:red;float:right;margin-top:5px"></i></button>
+        <div id="Demo6" class="w3-hide w3-animate-zoom">
+          <p class="w3-block w3-left-align w3-padding w3-light-grey">
+            Educational and counseling services, helps client to determine appropriate health care plan to promote health status for themselves and families, 
+            Organize for institutions  Health talks, walks and seminars, health event organizing and promoting, health screenings programs etc. 
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large box-shad" src="images/hc-1.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+
+    <!-- Curvy background -->
+    <!-- <svg id="curve-3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+      <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
+    </svg> -->
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="w3-container" style="padding:100px 0 0px 0;background-color:rgba(172, 172, 172, 0.1)" id="gallery">
+    <h3 class="w3-center w3-opacity" style="color:rgb(22, 190, 246)">Our GALLERY</h3>
+    <p class="w3-center w3-large">These quality of services is assured...</p>
+    <p class="w3-center w3-small"> <i>Click image to enlarge...</i> </p>
+
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l3 m6 slideanim w3-margin-bottom">
+        <img src="images/hc-7.jpg" class="w3-hover-opacity box-shad w3-round" style="width:100%" onclick="onClick(this)" alt="Client receiving Nurses">
+      </div>
+
+      <div class="w3-col l3 m6 slideanim w3-margin-bottom">
+        <img src="images/hc-8.jpg" class="w3-hover-opacity box-shad w3-round" style="width:100%" onclick="onClick(this)" alt="Nurses educating the family">
+      </div>
+
+      <div class="w3-col l3 m6 slideanim w3-margin-bottom">
+        <img src="images/hc-2.jpg" class="w3-hover-opacity box-shad w3-round" style="width:100%" onclick="onClick(this)" alt="Professional Family Health Care">
+      </div>
+
+      <div class="w3-col l3 m6 slideanim w3-margin-bottom">
+        <img src="images/hc-1.jpg" class="w3-hover-opacity box-shad w3-round" style="width:100%" onclick="onClick(this)" alt="Nurse treating patient">
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="slideanim w3-center">
+      <a href="gallery.html" class="w3-card-2 w3-button w3-grey w3-center box-shad">
+        <span> View more <i class="fa fa-th"></i> </span>
+      </a>
+    </div>
+
+    <!-- Curvy background -->
+    <svg id="curve-4" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+      <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
+    </svg>
+  </div>
+
+
+  <!-- Testimonials Section -->
+  <div style="background-color: rgba(172, 172, 172, 0.1)">
+  <div class="w3-container" style="padding:30px 0 80px 0;background-color:lightgrey" id="test">
+    <h3 class="w3-center margin-bottom w3-opacity" style="color:rgb(22, 190, 246)">Testimonials</h3><br>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators w3-margin-bottom" style="z-index: unset">
+          <li data-target="#myCarousel" data-slide-to="0" class="active" style="border:1px solid rgb(22, 190, 246);"></li>
+          <li data-target="#myCarousel" data-slide-to="1" style="border:1px solid rgb(22, 190, 246);"></li>
+          <li data-target="#myCarousel" data-slide-to="2" style="border:1px solid rgb(22, 190, 246);"></li>
+          <br>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner box-shad" role="listbox">
+          <div class="item active">
+            <div class="size">
+                <!-- <img src="pics/Pd3.jpg" alt="Fliers" width="400" height="200"> -->
+                <span> Haven is the best home medical care you can <br>
+                get in this country... </span>
+                <br><br>
+                <p><strong>Mrs. Sarah Kudjoe</strong></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="size">
+                <!-- <img src="pics/Pd3.jpg" alt="Fliers" width="400" height="200"> -->
+                <span> Look no further than Haven to take care <br>
+                of your aged parents... </span>
+                <br><br>
+                <p><strong>Opanin Yaw</strong></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="size">
+                <!-- <img src="pics/Pd3.jpg" alt="Fliers" width="400" height="200"> -->
+                <span> Young and passionate medical officers who sees<br>
+                to every need of yours... </span>
+                <br><br>
+                <p><strong>Ansah Family</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left fa fa-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right fa fa-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Curvy background -->
+    <!-- <svg id="curve-5" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+      <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
+    </svg> -->
+  </div>
+  </div>
+
+
+  <!-- Contact Section -->
+  <div class="w3-container" style="padding:100px 0 0px 0;background-color:rgba(173, 216, 230,0.2)" id="contact">
+    <h3 class="w3-center w3-opacity" style="color:rgb(22, 190, 246)">CONTACT</h3>
+    <p class="w3-center w3-large">Let's get in touch. Book an appointment</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-half">
+        <p><i class="fa fa-map-marker fa-fw w3-xlarge"></i> Kokomlemle around ATTC <br> Nearest land mark: Close to Panama Sch. park</p>
+        <p><i class="fa fa-phone fa-fw w3-xlarge"></i> Phone: 0558495162 / 0206636940</p>
+        <p><i class="fa fa-envelope fa-fw w3-xlarge"> </i> Email: havenhchs@gmail.com</p>
+        <br>
+      </div>
+      <div class="w3-half">
+        <form action="mailto:darkoemmanuelofosu@gmail.com" action="POST" target="_top">
+          <p><input class="w3-input" type="text" placeholder="Name" required name="Name" style="border:0.4px solid rgb(22, 190, 246);border-radius:5px"></p>
+          <p><input class="w3-input" type="text" placeholder="Email" required name="Email" style="border:0.4px solid rgb(22, 190, 246);border-radius:5px"></p>
+          <p><input class="w3-input" type="text" placeholder="Subject" required name="Subject" style="border:0.4px solid rgb(22, 190, 246);border-radius:5px"></p>
+          <p><input class="w3-input" type="text" placeholder="Message" required name="Body" style="border:0.4px solid rgb(22, 190, 246);border-radius:5px"></p>
+          <p>
+            <button class="w3-button box-shad" type="submit"  style="border:1px solid rgb(22, 190, 246);border-radius:5px">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+      </div>
+      
+      <!-- Curvy background -->
+      <svg id="curve-6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+        <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)"/>
+      </svg>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey" style="text-decoration: none;"><i class="fa fa-arrow-up w3-margin-right"></i>Scroll up</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fab fa-facebook w3-hover-opacity"></i>
+      <i class="fab fa-instagram w3-hover-opacity"></i>
+      <i class="fab fa-twitter w3-hover-opacity"></i>
+      <i class="fab fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">&copy; Haven <span id="year"></span> </p>
+      <p class="w3-medium"><i class="fa fa-hospital-symbol"></i> <span class="w3-text-blue">Your health,</span> <span class="w3-text-red">our priority</span></p>
+    </div>
+    <p class="w3-small">Powered by <a href="http://candle.paperplane.io"  class="w3-text-blue" title="Kode Company Ltd." target="_blank">Kode</a></p>
+    <script>
+      const date = new Date()
+      document.getElementById('year').innerHTML = date.getFullYear() 
+    </script>
+  </footer>
 
   <script src="src/main.js"></script>
   <script>
